@@ -44,4 +44,9 @@ public class Products {
     private void init(){
         dateOfCreated = LocalDateTime.now();
     }
+
+    public void addImageToProduct(Image image){
+        image.setProducts(this);
+        images.add(image);
+    }
 }
